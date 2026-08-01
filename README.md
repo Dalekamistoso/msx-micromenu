@@ -91,25 +91,9 @@ Keep `exec=` paths reasonably short.
 
 ---
 
-## Extra technical notes (you can ignore this if you are not a developer)
+## Credits:
+Program made by Carlos Romero (DrWh0 / Dalekamistoso) 2026/08/02
 
-- This program requieres **MSX-DOS 2** (paths and many file functions uses "handle" not present in MSX-DOS 1). 
-- If **MSX-DOS 1** is detected an error will be shown and execution will be cancelled.
-- 80 columns text mode (MSX2 or better) and color highlight uses BIOS calls using **inter-slot calls** (`CALSLT`) needed under MSX-DOS2.
-- Highlight on MSX2+ is implemented writing in blitter table of color/blinking in VRAM of 80 columns text mode (T2).
-- Compiled with [sjasmplus](https://github.com/z00m128/sjasmplus).
+Check my github for more projects:
+www.github.com/Dalekamistoso
 
----
-
-## Estructura del proyecto
-
-```
-menu.asm              Punto de entrada; incluye el resto de fuentes
-src/main.asm           Programa principal: pantalla, menu, navegacion, lanzamiento
-src/ini_parser.asm     Lectura y parseo de MENU.INI
-include/system.inc     Constantes de sistema (teclas, VRAM, colores...)
-include/bios.inc       Direcciones de rutinas de la BIOS
-include/dos.inc        Numeros de funcion de MSX-DOS
-data/MENU.INI          Ejemplo de configuracion
-build.bat              Script de compilacion
-```
