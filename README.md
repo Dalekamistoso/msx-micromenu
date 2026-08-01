@@ -1,6 +1,6 @@
 <img width="960" height="720" alt="MENU-MSX2" src="https://github.com/user-attachments/assets/2c92110b-41ea-422e-9842-3e8e9ab5d8de" />
 <img width="1280" height="960" alt="MENU-MSX1" src="https://github.com/user-attachments/assets/55f30039-cb43-4294-bf4d-690b207375a5" />
-# MicroMenu by DrWh0 / Dalekamistoso
+## MicroMenu by DrWh0 / Dalekamistoso
 
 Configurable program launcher for  **MSX-DOS 2**
 
