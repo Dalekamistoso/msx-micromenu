@@ -12,7 +12,7 @@ Configurable program launcher for  **MSX-DOS 2**
 - **Customizable Menu title**: Automatically selfcenters text in the header of the menu
 - **Nice graphic alike text menu box** centered according longest text in item list
 - **Automatic MSX1 / MSX2 or better video detection**:
-  - MSX2 or better: 80 width screen and selected option with a nice **real inverted background** (vía VRAM capabilities)
+  - MSX2 or better: 80 width screen & selected option with a nice **real inverted background** (vía VRAM)
   - MSX1: 40 width screen using a simple text `>` symbol compatible with all MSX1 character text set
 - **Automatic detection of MSX-DOS 2**: If system is not compatible will refuse to run
 - **Easy navigation**:
@@ -22,7 +22,7 @@ Configurable program launcher for  **MSX-DOS 2**
   - `ESC`: Exits from program and returns to MSX-DOS2.
 - **No annoying "keyclicks"** While you are in the launcher, it will reactivate when exiting.
 - **Highly compact**: Barely more than 3KB of disk space only two files, executable (~3,5kb & menu.ini
-- **No graphic garbage or memory leaks behind**: VRAM & RAM properly cleaned, no hit on perfomance or loss of free memory 
+- **No graphic garbage or memory leaks behind**: VRAM+RAM fully cleaned, no hit on perfomance/free memory 
 - **No complicated dependencies 100% made in assembler** Compiled only with SjASMPlus 
 
 ---
@@ -86,7 +86,7 @@ Keep `exec=` paths reasonably short.
    MENU
    ```
 3. You will see the text menu box with the title you provided (if set) and list of programs you provided.
-4. Use keyboard cursors `↑`/`↓`, or jump to next or previous page with `←`/`→` if there are more programs that can be listed in the same screen.
+4. Use keyboard cursors `↑`/`↓`, or jump to next/previous page with `←`/`→` if list is too long to fit on screen.
 5. Press `ENTER` key over the selected option you want to launch or `ESC` key to exit to MSX-DOS prompt.
 
 ---
