@@ -32,7 +32,7 @@ The file must be **in the same folder** that main executable (MENU.COM)
 Format of the file:
 
 ```ini
-[TITULO]      <-----FIELD THAT DEFINES THE TEXT HEADER
+[TITLE]       <-----FIELD THAT DEFINES THE TEXT HEADER ([TITULO] in 1.0 deprecated in 1.1)
 text=MSXMENU  <-----TEXT HEADER OF THE MENU PROGRAM
 
 [PROGRAMS]    <-----FIELD THAT DEFINES THE START OF THE LIST OF PROGRAMS (IN ORDER FROM UP TO DOWN)
@@ -50,7 +50,7 @@ exec=a:\juegos\milagro.com
 
 | Section      | Mandatory | Description                                                       |
 |--------------|-----------|-------------------------------------------------------------------|
-| `[TITULO]`   | No        | FIELD THAT DEFINES THE TEXT HEADER OF THE MENU CENTERED AT THE TOP|
+| `[TITLE]`    | No        | FIELD THAT DEFINES THE TEXT HEADER OF THE MENU CENTERED AT THE TOP|
 | `[PROGRAMS]` | Yes       | SECTION WITH THE LIST OF PROGRAMS AS MENTIONED EARLIER            |
 
 Remember that each programs is defined with **TWO consecutive lines**:
@@ -91,7 +91,7 @@ Keep `exec=` paths reasonably short.
 
 ## Credits:
 
-Program made by Carlos Romero (DrWh0 / Dalekamistoso) 2026/08/02
+Program made by Carlos Romero (DrWh0 / Dalekamistoso) 2026/08/12
 Check my github for more projects: www.github.com/Dalekamistoso
 
 
