@@ -37,7 +37,7 @@ The file must be **in the same folder** that main executable (MENU.COM)
 Format of the file:
 
 ```ini
-[TITLE]      <-----FIELD THAT DEFINES THE TEXT HEADER ([TITULO] in 1.0)
+[TITLE]       <-----FIELD THAT DEFINES THE TEXT HEADER ([TITULO] in 1.0)
 text=MSXMENU  <-----TEXT HEADER OF THE MENU PROGRAM
 
 [PROGRAMS]    <-----FIELD THAT DEFINES THE START OF THE LIST OF PROGRAMS (IN ORDER FROM UP TO DOWN)
