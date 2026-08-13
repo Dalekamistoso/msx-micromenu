@@ -41,14 +41,14 @@ Format of the file:
 text=MSXMENU  <-----TEXT HEADER OF THE MENU PROGRAM
 
 [PROGRAMS]    <-----FIELD THAT DEFINES THE START OF THE LIST OF PROGRAMS (IN ORDER FROM UP TO DOWN)
-text=Ejecutar Device Info  <-----DESCRIPTION OF THE PROGRAM 
+text=Run Device Info       <-----DESCRIPTION OF THE PROGRAM 
 exec=\devinfo.com          <-----FILE TO EXECUTE AND PATH (SUPPORTS RELATIVE AND FIXED PATHS)
 
-text=Ejecutar BASIC        <-----DESCRIPTION OF THE SECOND PROGRAM TO SHOW
+text=Run BASIC             <-----DESCRIPTION OF THE SECOND PROGRAM TO SHOW
 exec=BASIC                 <-----FILE TO EXECUTE AND PATH OF THE PROGRAM DESCRIBED IN THE PREVIOUS LINE
 
-text=Ejecutar un juego     <----- THE THIRD ONE AND SO ....
-exec=a:\juegos\milagro.com
+text=Run a game            <----- THE THIRD ONE AND SO ....
+exec=a:\games\miracle.com
 ```
 
 ### Sections (I explain again in a more detailed way)
