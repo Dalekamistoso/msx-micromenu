@@ -47,7 +47,7 @@ text=MSXMENU <-TEXT HEADER OF THE MENU
 text=Program's description
 exec=\program.com (drive:\path format)
 
-text=Ejecutar BASIC (Another example)
+text=Run BASIC (Another example)
 exec=BASIC (Direct command to run) 
 
 ```
@@ -128,4 +128,5 @@ Version 1.1 (2026/08/12)
 
 Check my github for more projects: 
 https://www.github.com/Dalekamistoso
+so
 
