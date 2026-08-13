@@ -55,7 +55,7 @@ exec=a:\games\miracle.com
 
 | Section      | Mandatory | Description                                                       |
 |--------------|-----------|-------------------------------------------------------------------|
-| `[TITLE]`    | No        | FIELD THAT DEFINES THE TEXT HEADER OF THE MENU CENTERED AT THE TOP|
+| `[TITLE]`    | No        | DEFINED TEXT HEADER OF THE MENU CENTERED AT THE TOP               |
 | `[PROGRAMS]` | Yes       | SECTION WITH THE LIST OF PROGRAMS AS MENTIONED EARLIER            |
 
 Remember that each programs is defined with **TWO consecutive lines**:
