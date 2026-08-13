@@ -95,7 +95,7 @@ Keep `exec=` paths reasonably short.
 ---
 
 ## Credits:
-Program made by Carlos Romero (DrWh0 / Dalekamistoso) 2026/08/12
+Program made by Carlos Romero (DrWh0 / Dalekamistoso) 2026/08/13
 
 Check my github for more projects:
 www.github.com/Dalekamistoso

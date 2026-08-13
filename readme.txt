@@ -124,7 +124,7 @@ Keep `exec=` paths reasonably short.
 
 Program made by:
 Carlos Romero (DrWh0/Dalekamistoso)
-Version 1.1 (2026/08/12)
+Version 1.2 (2026/08/13)
 
 Check my github for more projects: 
 https://www.github.com/Dalekamistoso
