@@ -5,8 +5,8 @@ Configurable program launcher for  **MSX-DOS 2**
 
 ---
 <img width="1280" height="960" alt="MENU-MSX0" src="https://github.com/user-attachments/assets/90bccae8-87af-4166-bee4-c0f15f761960" />
-<img width="960" height="720" alt="MENU-MSX2" src="https://github.com/user-attachments/assets/2c92110b-41ea-422e-9842-3e8e9ab5d8de" />
-<img width="1280" height="960" alt="MENU-MSX1" src="https://github.com/user-attachments/assets/55f30039-cb43-4294-bf4d-690b207375a5" />
+<img width="960" height="720" alt="MENU-MSX2" src="https://github.com/user-attachments/assets/207707a0-2023-43e6-89c5-9adac441085d" />
+<img width="1280" height="960" alt="MENU-MSX1" src="https://github.com/user-attachments/assets/ac8c84a9-23e8-4443-821a-8707298e42f9" />
 
 ---
 
