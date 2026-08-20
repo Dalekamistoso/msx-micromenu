@@ -56,7 +56,7 @@ exec=\devinfo.com      <-----FILE TO EXECUTE AND PATH (SUPPORTS RELATIVE AND FIX
 text=Run BASIC         <-----DESCRIPTION OF THE SECOND PROGRAM TO SHOW
 exec=BASIC             <-----FILE TO EXECUTE AND PATH OF THE PROGRAM DESCRIBED IN THE PREVIOUS LINE
 
-text=Run a game            <----- THE THIRD ONE AND SO ....
+text=Run a game        <----- THE THIRD ONE AND SO ....
 exec=a:\games\miracle.com
 ```
 
