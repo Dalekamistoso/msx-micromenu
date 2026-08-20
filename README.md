@@ -30,7 +30,7 @@ Configurable program launcher for  **MSX-DOS 2**
 - **Launches programs from their own folder**: if `exec=` includes a path, MicroMenu changes into that directory (via MSX-DOS2) before running the program, so programs that expect their own data files in the current directory work correctly.
 - **Optional custom screen colors** via a `[COLOR]` section in `MENU.INI` (MSX `COLOR ink,paper,border` format), original colors are restored automatically before the selected program runs, and on exit.
 - **No annoying "keyclicks"** While you are in the launcher, it will reactivate when exiting.
-- **Highly compact**: Barely more than 3KB of disk space only two files, executable (~3,5kb & menu.ini
+- **Highly compact**: Barely more than 3KB of disk space only two files, executable (~3,5kb & menu.ini)
 - **No graphic garbage or memory leaks behind**: VRAM+RAM fully cleaned, no hit on perfomance/free memory 
 - **No complicated dependencies 100% made in assembler** Compiled only with SjASMPlus 
 
