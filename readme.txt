@@ -10,6 +10,7 @@ Configurable launcher for MSX-DOS 2
 - Easy to add/remove/rename programs
 - Customizable Menu title
 - Automatically centers text in header
+- Customizable colours
 - Nice graphic alike text menu box
 - Automatic MSX1/MSX2/2+ detection:
   - MSX2 or better: 80 width screen
@@ -42,6 +43,9 @@ Format of the file:
 ```ini
 [TITLE]      <-DEFINES THE TEXT HEADER
 text=MSXMENU <-TEXT HEADER OF THE MENU
+
+[COLOR]      <-DEFINES MENU COLOURS
+color=15,1,1 <-USE MSX 'COLOR' SYNTAX
 
 [PROGRAMS]   <-PROGRAM LIST (UP->DOWN)
 text=Program's description
@@ -124,9 +128,8 @@ Keep `exec=` paths reasonably short.
 
 Program made by:
 Carlos Romero (DrWh0/Dalekamistoso)
-Version 1.2 (2026/08/13)
+Version 1.3 (2026/08/20)
 
 Check my github for more projects: 
 https://www.github.com/Dalekamistoso
-so
 

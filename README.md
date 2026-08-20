@@ -14,6 +14,7 @@ Configurable program launcher for  **MSX-DOS 2**
 
 - **Customizable setup editing a single text file** (`MENU.INI`): Easily add/remove/rename programs
 - **Customizable Menu title**: Automatically selfcenters text in the header of the menu
+- **Customizable color schema**: Choose your favorite colours
 - **Nice graphic alike text menu box** centered according longest text in item list
 - **Automatic MSX1 / MSX2 or better video detection**:
   - MSX2 or better: 80 width screen & selected option with a nice **real inverted background** (vía VRAM)
@@ -24,6 +25,8 @@ Configurable program launcher for  **MSX-DOS 2**
   - `←` / `→`: Moves quickly between multiple pages of options
   - `ENTER`: Executes the current highlighted program
   - `ESC`: Exits from program and returns to MSX-DOS2.
+- **Launches programs from their own folder**: if `exec=` includes a path, MicroMenu changes into that directory (via MSX-DOS2) before running the program, so programs that expect their own data files in the current directory work correctly.
+- **Optional custom screen colors** via a `[COLOR]` section in `MENU.INI` (MSX `COLOR ink,paper,border` format). The original colors are restored automatically before the selected program runs, and on exit.
 - **No annoying "keyclicks"** While you are in the launcher, it will reactivate when exiting.
 - **Highly compact**: Barely more than 3KB of disk space only two files, executable (~3,5kb & menu.ini
 - **No graphic garbage or memory leaks behind**: VRAM+RAM fully cleaned, no hit on perfomance/free memory 
@@ -38,15 +41,18 @@ The file must be **in the same folder** that main executable (MENU.COM)
 Format of the file:
 
 ```ini
-[TITLE]       <-----FIELD THAT DEFINES THE TEXT HEADER ([TITULO] in 1.0)
+[TITLE]       <-----OPTIONAL FIELD, DEFINES THE TEXT HEADER ([TITULO] in 1.0)
 text=MSXMENU  <-----TEXT HEADER OF THE MENU PROGRAM
 
-[PROGRAMS]    <-----FIELD THAT DEFINES THE START OF THE LIST OF PROGRAMS (IN ORDER FROM UP TO DOWN)
-text=Run Device Info       <-----DESCRIPTION OF THE PROGRAM 
-exec=\devinfo.com          <-----FILE TO EXECUTE AND PATH (SUPPORTS RELATIVE AND FIXED PATHS)
+[COLOR]                <-----OPTIONAL FIELD, CUSTOM SCREEN COLORS
+color=15,1,1           <-----Ink,Paper,Border (MSX COLOR STANDARD VALUES 0-15)
 
-text=Run BASIC             <-----DESCRIPTION OF THE SECOND PROGRAM TO SHOW
-exec=BASIC                 <-----FILE TO EXECUTE AND PATH OF THE PROGRAM DESCRIBED IN THE PREVIOUS LINE
+[PROGRAMS]    <-----FIELD THAT DEFINES THE START OF THE LIST OF PROGRAMS (IN ORDER FROM UP TO DOWN)
+text=Run Device Info   <-----DESCRIPTION OF THE PROGRAM 
+exec=\devinfo.com      <-----FILE TO EXECUTE AND PATH (SUPPORTS RELATIVE AND FIXED PATHS)
+
+text=Run BASIC         <-----DESCRIPTION OF THE SECOND PROGRAM TO SHOW
+exec=BASIC             <-----FILE TO EXECUTE AND PATH OF THE PROGRAM DESCRIBED IN THE PREVIOUS LINE
 
 text=Run a game            <----- THE THIRD ONE AND SO ....
 exec=a:\games\miracle.com
@@ -57,8 +63,11 @@ exec=a:\games\miracle.com
 | Section      | Mandatory | Description                                                       |
 |--------------|-----------|-------------------------------------------------------------------|
 | `[TITLE]`    | No        | DEFINED TEXT HEADER OF THE MENU CENTERED AT THE TOP               |
+| `[COLOR]`    | No        | DEFINED TEXT COLOURS USING "COLOR" MSX COMMAND SYNTAX             |
 | `[PROGRAMS]` | Yes       | SECTION WITH THE LIST OF PROGRAMS AS MENTIONED EARLIER            |
 
+If [TITLE] is not present menu will show without header block, only footer block
+If [COLOR] is not present menu will be shown with current system colours
 Remember that each programs is defined with **TWO consecutive lines**:
 
 ```ini
